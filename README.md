@@ -4,11 +4,17 @@
 <details>
 <summary>Click to view detailed instructions</summary>
 1. Create a 600x600 square canvas;
+   
 2. Divide the canvas evenly into left and right sections;
+   
 3. Set the background of the left half to black;
+
 4. Set the background of the right half to white;
+
 5. Place the 😭 emoji in the top-left corner;
+
 6. Place the 😀 emoji in the top-right corner;
+ 
 7. When the mouse is clicked, draw based on the mouse pointer's location:
    a. If the mouse is in the left half, draw a crying face;
    b. If the mouse is in the right half, draw a smiling face;
