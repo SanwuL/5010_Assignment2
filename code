@@ -1,0 +1,70 @@
+function setup() {
+  createCanvas(600, 600);
+  noLoop(); 
+}
+
+function draw() {
+  background(220);
+  // left is black
+  fill(0);
+  rect(0, 0, width/2, height);
+  // right is white
+  fill(255);
+  rect(width/2, 0, width/2, height);
+  //emojis
+  textSize(75)
+  text('😀',500,100)
+  text('😭',10,100)
+  // if mouse in black area, draw SadFace
+  if (mouseX < width/2 && mouseX > 0 && mouseY > 0 && mouseY < height) {
+    drawSadFace(mouseX, mouseY);
+  }
+  // if mouse in white area, draw HappyFace
+  else if (mouseX > width/2 && mouseX < width && mouseY > 0 && mouseY < height) {
+    drawHappyFace(mouseX, mouseY);
+  }
+}
+
+function mousePressed() {
+  redraw(); 
+}
+
+
+function drawSadFace(x, y) {
+  // face_yellow circle
+  fill(255, 255, 0);
+  circle(x, y, 80);
+  
+  // eyes_black arc
+  noFill();
+  arc(x-20, y-20, 20,10, PI, TWO_PI);
+  arc(x+20, y-20, 20,10, PI, TWO_PI);
+  
+  // tears
+  fill("Blue")
+  ellipse(x-20, y+5, 10, 60);
+  ellipse(x+20, y+5, 10, 60);
+  
+  // sad mouse
+  fill("Red");
+  ellipse(x, y+15, 20, 30);
+}
+
+
+function drawHappyFace(x, y) {
+  // face_yellow circle
+  fill(255, 255, 0); 
+  circle(x, y, 80);
+  
+  // eyes_black circle & white circle
+  fill(255)
+  circle(x-20,y-20,20);
+  circle(x+20,y-20,20);
+  fill(0);
+  circle(x-20, y-20, 10);
+  circle(x+20, y-20, 10);
+  
+  // happy mouse
+  fill("Red");
+  arc(x, y+5, 50, 40, 0, PI);
+}
