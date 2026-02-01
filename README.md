@@ -3,6 +3,7 @@
 **Instructions**
 <details>
 <summary>Click to view detailed instructions</summary>
+   
 1. Create a 600x600 square canvas;
    
 2. Divide the canvas evenly into left and right sections;
