@@ -1,3 +1,13 @@
 # 5010_Assignment2
 
-<iframe src="https://editor.p5js.org/SanwuL/full/nKvC8JnoV"></iframe>
+**Instructions**
+<details>
+<summary>Click to view detailed instructions</summary>
+
+</details>
+
+**Code**
+<details>
+<summary>Click to view full code</summary>
+
+</details>
