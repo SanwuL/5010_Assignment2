@@ -7,4 +7,4 @@ Instructions：
 3. Apply an RGB gradient color to all squares;
 4. Randomly select several squares and apply random colors to them.
 
-The instruction is logically sound and the result is as expected.
+The original instructions is logically sound and the result is as expected.
